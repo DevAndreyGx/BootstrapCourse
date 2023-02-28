@@ -1,0 +1,127 @@
+<!--Bootstrap es un framework de css para desarrollar sitios web adaptables (responsivos).
+
+Framework => Es una estructura(base) que puedes usar para desarrollar tu aplicacion o sition web de forma mas rapiday eficiente. En si un framework(css) son clases y estilos ya hechos que se puede utilizar para ahorrar trabajo.
+
+Framework css son clases predeterminadas la cuales se pueden asignar a los elementos de html y  las clases lo van asignar automaticamente no hay necesidad de escribir los estilos ni configurar ninguna de esas propiedades.
+
+Responsive que se *adapta* a distintos dispositivos en base a su tamaño y orientacion( en desarrollo web). 
+
+
+Bootstrap tiene 3 grandes pilares - Grid - Componenetes - Iconos
+
+Grid Bootstrap: Conjunto de contenedores, filas y columnas que definen cómo se va a presentar y a alinear el contenido.
+12 columnas
+-->
+
+<!-- 
+    Clases para la grid{
+        .row { -- > Row es la fila y  con los metodos que esta dentro de la row podemos configurar columnas
+            # -- > numero columnas
+            .col-md-#
+            .col-#
+            .col-lg-#
+            .col-sm-# 
+            .col-xl-#
+
+            Estos son los estandares de ancho para los metodos de la row
+            (BreakPoint){
+                .col-# = xs = <576px 
+                .col-sm-# = sm=>= 576px
+                .col-md-# = md = >=768px
+                .col-lg-# = lg = >=992px
+                .col-xl-# = xl = >=1200px
+                .col-xxl-# = xxl = >=1400px
+                (BreakPoint) {
+                    Dimension (ancho) a partir de la cual podemos cambiar el estilo o la estructura de la pagina web.
+                }
+            }
+            
+        }
+        
+    }
+
+
+-->
+
+<!--
+    Componenetes de Bootstrap{
+        Elementos HTML reutilizable que ya viene con un estilo predetermindado y que podemos usar en nuestra pagina web(Podemos personalizar el estilo de los componentes de Bootstrap)
+    }
+    FlexBox{
+        Permite que los elementos responsivos ubicados dentro de un contenedor se distribuyan automaticamente en base al tamaño del dispositivo
+        Bootstrap{
+            Bootstrap incluye clases que podemos usar para trabajar con flexbox más facilmente
+            (d-flex) === display: flex; 
+            <div class="d-flex"></div>
+        }
+        (propiedades-flexBox){
+            Flex-direction {
+                Establece el eje principal del contenedor, la direccion en la cual se van a color los elementos dentro del contenedor. 
+
+                propiedades(
+                    * Row
+                    * Colum 
+                    * Row-reverse
+                    * Column-reverse
+                )
+            }
+            Justify-content {
+                Define como se distribuyen los elementos en el ej principal.
+
+                propiedades en css(
+                    * Center --> es la mas importante
+                    * flex-start
+                    * flex-end 
+                    * space-between
+                    * space-around
+                    * space-evenly
+                )
+                propiedades con Bootstrap(
+                    * .nombrepropiedad-start
+                    * .nombrepropiedad-end
+                    * .nombrepropiedad-center
+                    * .nombrepropiedad-between
+                    * .nombrepropiedad-around
+                    * .nombrepropiedad-evenly
+
+                )
+            }
+            Align-items {
+                Define como se distribuyen los elementos en el eje perpendicular al eje principal.
+
+                propiedades css(
+                    * flex-start
+                    * flex-end 
+                    * center 
+                    * baseline 
+                    * stretch (estirar)
+                
+                )
+                propiedades con Bootstrap(
+                    * .nombrepropiedad-start
+                    * .nombrepropiedad-end
+                    * .nombrepropiedad-center
+                    * .nombrepropiedad-baseline
+                    * .nombrepropiedad-stretch
+
+
+                )
+            }
+            flex-wrap {
+                Determina si los elementos deben ser ajustados para que siempre esten en una misma linea o si se les permite distribuirse en varias lineas si es necesario.
+
+                propiedades css(
+                    * nowrap
+                    * wrap 
+                    * wrap-reverse
+                )
+
+                propiedades Bootstrap(
+                    * .flex-nowrap
+                    * .flex-wrap 
+                    * .flex-wrap-reverse
+                )
+            }
+        }
+    }
+-->
